@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Home Page | Movie Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <style>
+/*html{
+  height: 100%;
+}*/
+.intro{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    position: relative;
+    text-align: center;
+    padding-top: 15px;
+}
+.main-footer{
+  margin-bottom: auto;
+  background-color: gray;
+  min-height: 190px;
+  width: 100%;
+  
+}
+.catnav li a{
+    color: white;
+}
+/*.navmenue li{
+  display: inline;
+}
+.navmenue a{
+  color: white;
+  text-decoration:none;
+  font-family: sans-serif;
+  padding: 15px;
+  text-align: left;
+}
+*/
+.mySlides img {vertical-align: middle;}
+body{
+  background-image:url(multiverse.jpg);  
+  
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 990px;
+  position: relative;
+  margin: auto;
+  height: 600px;
+  object-fit: contain;
+}
+/* Number text (1/5 etc) */
+.numbertext {
+  color: gainsboro;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .intro {font-size: 11px}
+}
+    </style>
+</head>
+  <body>
+    <div>
+      <nav class="cathead">
+          <div class="title"><img src=" WEBSITE LOGO.png " alt="logo"></div> 
+             <div class="catnav">
+                 <ul>
+                  <li><a href="Booking.html">Booking</a></li>
+                  <li><a href="ComingSoon.html">ComingSoon</a></li>
+                  <li><a href="Contact.html">Contact</a></li>
+                  <li><a href="catergories.html">catergories</a></li>
+                   </ul>
+             </div>
+      </nav>
+    </div>
+    <!-- <div class="wrapper">
+    <nav class="masterhome">
+      <div class="master">
+        <img src="logo1.png" alt="logo"></div>
+      <div class="navmenue">
+          <ul>
+         <li><a href="Booking.html">Booking</a></li>
+         <li><a href="Services.html">ComingSoon</a></li>
+         <li><a href="Contact.html">Contact</a></li>
+         <li><a href="catergories.html">catergories</a></li>
+         </ul>
+      </div>
+    </nav>
+    </div>-->
+
+<div class="slideshow-container">
+    
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 5</div>
+      <img src="idex3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 5</div>
+      <img src="idex2.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 5</div>
+      <img src="idex1.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 5</div>
+      <img src="idex4.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 5</div>
+      <img src="idex5.jpg" style="width:100%">
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+</div>
+<br>
+<div class="intro"><h1>WELCOME TO </h1>
+  <h2>MULTIVERSE THEATRE</h2>
+<p>Rousing the world to celebrate and remember their dreams or minds through the big screen !!</p>
+<p>This vision accentuation the joy a singular will get when they visit the theater as they can feel in contact with their feelings.</p> </div> 
+      
+    
+<footer class="main-footer">
+    
+   <div class="footercont">
+    <div class="outerfooter">
+    <p>CONTACTS</p>
+    <br>
+    <p>customer@multiversetheatre.co.bw </p>
+    <p>www.multiversetheatre.com</p>
+    </div>
+    
+    
+</div>
+   </footer>
+   <script>
+     let slideIndex = 0;
+    showSlides();
+
+   function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+   </script>
+    
+   </body>
+</html>
